@@ -42,8 +42,9 @@ amaxis([0 70 0 2]);  box on;
 xlabel('time (sec)');
 ylabel('throttle');
 
-lgh = legend('Commanded', 'Applied');
-legend(lgh, 'boxoff');
+legend(['Commanded', 'Applied'], 'boxoff');
+%lgh = legend('Commanded', 'Applied');
+%legend(lgh, 'boxoff');
 
 amprint('cruisepi-windup.eps');
 
@@ -77,8 +78,9 @@ amaxis([0 70 0 2]); box on;
 xlabel('time (sec)');
 ylabel('throttle');
 
-lgh = legend('Commanded', 'Applied');
-legend(lgh, 'boxoff');
+legend(['Commanded', 'Applied'], 'boxoff');
+%lgh = legend('Commanded', 'Applied');
+%legend(lgh, 'boxoff');
 
 amprint('cruisepi-antiwindup.eps');
 
